@@ -151,6 +151,8 @@
 1. Менеджер натискає кнопку "Create poll request".  
 2. Система пропонує форму "New poll request".  
 3. Менеджер заповнює поле "Message".  
+4. Менеджер натискає кнопку "Send request".
+5. Система надсилає запит аналітику.
 
 **ДІАГРАМА**:  
 ![se-1-8](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-8.puml)
