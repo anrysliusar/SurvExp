@@ -1,9 +1,13 @@
 ## 1. Вступ  
 Цей документ містить в собі опис основних сценаріїв роботи системи.
 
-## 2. Сценарії  
+## 2. Діаграма прецедентів
 
-### 2.1 Сценарій реєстрації нового користувача
+![general-diagram-of-use-cases](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-of-use-cases.puml)
+
+## 3. Сценарії  
+
+### 3.1 Сценарій реєстрації нового користувача
 
 **ID**: SE-1.1  
 **НАЗВА**: Реєстрація нового користувача  
@@ -22,7 +26,7 @@
 **ДІАГРАМА**:  
 ![se-1-1](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-1.puml)
 
-### 2.2 Сценарій створення аналітиком нового опитування  
+### 3.2 Сценарій створення аналітиком нового опитування  
 
 **ID**: SE-1.2  
 **НАЗВА**: Cтворення нового опитування  
@@ -43,7 +47,7 @@
 **ДІАГРАМА**:  
 ![se-1-2](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-2.puml)
 
-### 2.3 Надсилання запрошень для участі в опитуванні зареєстрованим експертам  
+### 3.3 Надсилання запрошень для участі в опитуванні зареєстрованим експертам  
 
 **ID**: SE-1.3  
 **НАЗВА**: Надсилання запрошень для участі в опитуванні зареєстрованим експертам  
@@ -58,7 +62,7 @@
 **ДІАГРАМА**:  
 ![se-1-3](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-3.puml)
 
-### 2.4 Надсилання персональних запрошень для участі в опитуванні  
+### 3.4 Надсилання персональних запрошень для участі в опитуванні  
 
 **ID**: SE-1.4  
 **НАЗВА**: Надсилання персональних запрошень для участі в опитуванні  
@@ -77,7 +81,7 @@
 **ДІАГРАМА**:  
 ![se-1-4](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-4.puml)
 
-### 2.5 Сценарій додавання питання
+### 3.5 Сценарій додавання питання
 
 **ID**: SE-1.5  
 **НАЗВА**: Додавання питання  
@@ -95,7 +99,7 @@
 **ДІАГРАМА**:  
 ![se-1-5](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-5.puml)
 
-### 2.6 Сценарій проходження опитування
+### 3.6 Сценарій проходження опитування
 
 **ID**: SE-1.6  
 **НАЗВА**: Проходження опитування  
@@ -113,7 +117,7 @@
 **ДІАГРАМА**:  
 ![se-1-6](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-6.puml)
 
-### 2.7 Сценарій авторизації користувача
+### 3.7 Сценарій авторизації користувача
 
 **ID**: SE-1.7  
 **НАЗВА**: Авторизація користувача  
@@ -134,7 +138,7 @@
 **ДІАГРАМА**:  
 ![se-1-7](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-7.puml)
 
-### 2.8 Запит на створення нового опитування аналітиком  
+### 3.8 Формування запиту на створення опитування аналітиком  
 
 **ID**: SE-1.8  
 **НАЗВА**: Авторизація користувача  
@@ -150,7 +154,3 @@
 
 **ДІАГРАМА**:  
 ![se-1-8](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-8.puml)
-
-## 3. Діаграма прецедентів
-
-![general-diagram-of-use-cases](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-of-use-cases.puml)
