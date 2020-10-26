@@ -1,0 +1,18 @@
+@startuml
+
+  |Менеджер|
+  start
+  :Натискає кнопку \n«Create personal invitation»;
+  |Система|
+  :Пропонує форму \n«New personal invitation»;
+  |Менеджер|
+  :Заповнює поля \n«Name», «Surname»;
+  |Менеджер|
+  :Натискає кнопку \n«Create personal link»\n;
+  |Система|
+  :Генерує \nперсональне посилання;
+  |Менеджер|
+  :Надсилає персональне \nпосилання експерту;
+  stop
+
+@enduml

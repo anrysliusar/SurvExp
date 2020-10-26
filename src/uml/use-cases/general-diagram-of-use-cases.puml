@@ -1,0 +1,34 @@
+@startuml
+
+    actor "Користувач" as User
+
+    actor "Менеджер" as Manager
+    actor "Аналітик" as Analyst
+    actor "Експерт" as Expert
+    
+    User <|-- Manager
+    User <|-- Analyst
+    User <|-- Expert
+
+    usecase "Реєстрація" as SE_11
+    usecase "Створення нового опитування" as SE_12
+    usecase "Надсилання запрошень" as SE_13
+    usecase "Надсилання персональних запрошень" as SE_14
+    usecase "Додавання питання" as SE_15
+    usecase "Проходження опитування" as SE_16
+    usecase "Авторизація" as SE_17
+    usecase "Формування запиту на створення опитування" as SE_18
+    
+    User -u-> SE_11
+    User -u-> SE_17
+    
+    Manager --> SE_13
+    Manager --> SE_14
+    Manager --> SE_18
+
+    Analyst --> SE_12
+    Analyst --> SE_15
+
+    Expert --> SE_16
+
+@enduml
