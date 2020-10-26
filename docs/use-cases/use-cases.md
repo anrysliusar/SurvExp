@@ -155,5 +155,4 @@
 5. Система надсилає запит аналітику.
 
 **ДІАГРАМА**:  
-![se-1-8](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/blob/main/src/uml/use-cases/se-1-8.puml)
-
+![se-1-8](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-8.puml)
