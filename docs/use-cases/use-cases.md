@@ -134,6 +134,23 @@
 **ДІАГРАМА**:  
 ![se-1-7](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-7.puml)
 
+### 2.8 Запит на створення нового опитування аналітиком  
+
+**ID**: SE-1.8  
+**НАЗВА**: Авторизація користувача  
+**УЧАСНИКИ**: Менеджер; Система   
+**ПЕРЕДУМОВИ**: Наявність запиту на створення нового опитування від замовника.  
+**РЕЗУЛЬТАТ**: Аналітик отримав запит.  
+**ВИКЛЮЧНІ СИТУАЦІЇ**: Відсутні.  
+
+**ОСНОВНИЙ СЦЕНАРІЙ**:  
+1. Менеджер натискає кнопку "Create poll request".  
+2. Система пропонує форму "New poll request".  
+3. Менеджер заповнює поле "Message".  
+
+**ДІАГРАМА**:  
+![se-1-8](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-8.puml)
+
 ## 3. Діаграма прецедентів
 
 ![general-diagram-of-use-cases](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-of-use-cases.puml)
