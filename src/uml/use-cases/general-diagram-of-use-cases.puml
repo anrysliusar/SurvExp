@@ -24,7 +24,7 @@
     
     Manager --> SE_13
     Manager --> SE_14
-    Manager --> SE_18
+    Manager -u-> SE_18
 
     Analyst --> SE_12
     Analyst --> SE_15
