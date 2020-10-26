@@ -1,0 +1,21 @@
+@startuml
+
+    actor "Аналітик" as Analyst
+
+
+    usecase "Створення нового опитування" as SE_12 #aaeeaa
+    usecase "Редагування анкети" as SE_12.1
+    usecase "Додання питання" as SE_12.1.1
+    usecase "Видалення питання" as SE_12.1.2
+    usecase "Додання відповіді" as SE_12.1.3
+    usecase "Видалення відповіді" as SE_12.1.4
+    
+
+    Analyst --> SE_12
+    SE_12.1 .u.> SE_12: extends
+    SE_12.1.1 .u.> SE_12.1: extends
+    SE_12.1.2 .u.> SE_12.1: extends
+    SE_12.1.3 .u.> SE_12.1: extends
+    SE_12.1.4 .u.> SE_12.1: extends
+
+@enduml
