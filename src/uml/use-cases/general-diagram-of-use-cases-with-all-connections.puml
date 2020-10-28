@@ -20,17 +20,16 @@
     
     Manager --> SE_11
     Manager --> SE_16
-    Manager --> SE_13
-    Manager --> SE_14
-    Manager --> SE_17
+    Manager -u-> SE_13
+    Manager -u-> SE_14
+    Manager -u-> SE_17
 
     Analyst --> SE_11
     Analyst --> SE_16
-    Analyst --> SE_12
-    Analyst --> SE_14
+    Analyst -u-> SE_12
 
     Expert --> SE_11
     Expert --> SE_16
-    Expert --> SE_15
+    Expert -u-> SE_15
 
 @enduml
