@@ -97,7 +97,7 @@
 5. Система зберігає відповіді.  
 
 **ДІАГРАМА**:  
-![se-1-5](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-6.puml)
+![se-1-5](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-5.puml)
 
 ### 3.6 Сценарій авторизації користувача
 
@@ -118,7 +118,7 @@
 5. Система авторизує користувача.  
 
 **ДІАГРАМА**:  
-![se-1-6](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-7.puml)
+![se-1-6](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-6.puml)
 
 ### 3.7 Формування запиту на створення опитування аналітиком  
 
@@ -137,4 +137,4 @@
 5. Система надсилає запит аналітику.
 
 **ДІАГРАМА**:  
-![se-1-7](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-8.puml)
+![se-1-7](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/se-1-7.puml)
