@@ -6,7 +6,7 @@
 ### Загальна діаграма прецедентів (початок)
 ![general-diagram-without-connections](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-without-connections.puml)
 
-## Відношення "connectivity"
+### Відношення "connectivity"
 ![general-diagram-of-use-cases-with-all-connections](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-of-use-cases-with-all-connections.puml)
 
 ### Відношення узагальнення
