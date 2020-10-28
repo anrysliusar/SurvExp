@@ -3,17 +3,17 @@
 
 ## 2. Діаграма прецедентів
 
-### Один
-![analyst-in-detail](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/analyst-in-detail.puml)
+### Загальна діаграма прецедентів (початок)
+![general-diagram-without-connections](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-without-connections.puml)
 
-### Два
+## Відношення "connectivity"
 ![general-diagram-of-use-cases-with-all-connections](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-of-use-cases-with-all-connections.puml)
 
-### Три
+### Відношення узагальнення
 ![general-diagram-of-use-cases](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-of-use-cases.puml)
 
-### Четыре
-![general-diagram-without-connections](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-without-connections.puml)
+### Структурування моделі варіантів використання
+![analyst-in-detail](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/analyst-in-detail.puml)
 
 ## 3. Сценарії  
 
