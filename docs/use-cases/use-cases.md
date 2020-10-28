@@ -3,9 +3,16 @@
 
 ## 2. Діаграма прецедентів
 
+### Один
 ![analyst-in-detail](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/analyst-in-detail.puml)
+
+### Два
 ![general-diagram-of-use-cases-with-all-connections](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-of-use-cases-with-all-connections.puml)
+
+### Три
 ![general-diagram-of-use-cases](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-of-use-cases.puml)
+
+### Четыре
 ![general-diagram-without-connections](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/snyk04/SurvExp/main/src/uml/use-cases/general-diagram-without-connections.puml)
 
 ## 3. Сценарії  
