@@ -1,0 +1,59 @@
+@startuml
+  
+  '-----Пользователи-----'
+  '-Пользователь-'
+  entity User
+  entity User.id
+  entity User.username
+  entity User.role
+  '-Эксперт-'
+  entity Expert
+  entity Expert.id
+  entity Expert.occupation
+  
+  '-----Объекты-----'
+  '-Опрос-'
+  entity Survey
+  entity Survey.id
+  entity Survey.name
+  entity Survey.theme
+  entity Survey.deadline
+  '-Вопрос-'
+  entity Question
+  entity Question.id
+  entity Question.type
+  entity Question.text
+  entity Question.possibleAnswers
+  '-Ответы на анкеты-'
+  entity Result
+  entity Result.date
+  
+  
+  '-----Пользователи-----'
+  '-Пользователь-'
+  User.id -u-* User
+  User.username -u-* User
+  User.role -u-* User
+  '-Эксперт-'
+  Expert.id -d-* Expert
+  Expert.occupation -d-* Expert
+  
+  '-----Объекты-----'
+  '-Связи-'
+  Question "1, *" -u- "1, 1" Survey
+  Result "0, *" -u- "1, 1" Survey
+  Result "1, 1" -u- "1, 1" Expert
+  '-Опрос-'
+  Survey.id -d-* Survey
+  Survey.name -d-* Survey
+  Survey.theme -d-* Survey
+  Survey.deadline -d-* Survey
+  '-Вопрос-'
+  Question.id -u-* Question
+  Question.type -u-* Question
+  Question.text -u-* Question
+  Question.possibleAnswers -u-* Question
+  '-Ответы на анкеты-'
+  Result.date -u-* Result
+  
+@enduml

@@ -1,0 +1,36 @@
+@startuml
+
+  entity User <<ENTITY>> {
+    id:NUMBER
+    name:TEXT
+    role:NUMBER
+  }
+  
+  entity Expert <<ENTITY>>{
+    id:NUMBER
+    occupation:TEXT[]
+  }
+  
+  entity Survey <<ENTITY>>{
+    id:NUMBER
+    name:TEXT
+    theme:TEXT
+    deadline:DATE
+  }
+  
+  entity Question <<ENTITY>>{
+    id:NUMBER
+    type:NUMBER
+    text:TEXT
+    possibleAnswers:TEXT[]
+  }
+
+  entity Result <<ENTITY>> {
+    date: DATE
+  }
+  
+  Question "1, *" -u- "1, 1" Survey
+  Result "0, *" -u- "1, 1" Survey
+  Result "1, 1" -u- "1, 1" Expert
+      
+@enduml
