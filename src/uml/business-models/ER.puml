@@ -1,36 +1,44 @@
 @startuml
 
   entity User <<ENTITY>> {
-    id:NUMBER
-    name:TEXT
-    role:NUMBER
+    id:INT
+    username:TEXT
+    role:INT
   }
   
   entity Expert <<ENTITY>>{
-    id:NUMBER
-    occupation:TEXT[]
+    id:INT
+    userid:INT
+    occupation:TEXT
   }
   
   entity Survey <<ENTITY>>{
-    id:NUMBER
+    id:INT
     name:TEXT
-    theme:TEXT
+    topic:TEXT
     deadline:DATE
   }
   
   entity Question <<ENTITY>>{
-    id:NUMBER
-    type:NUMBER
+    id:INT
+    type:INT
     text:TEXT
-    possibleAnswers:TEXT[]
   }
 
-  entity Result <<ENTITY>> {
-    date: DATE
+  entity Answer <<ENTITY>> {
+    id:INT
+    date:DATE
+    text:TEXT
   }
   
+  entity PossibleAnswers <<ENTITY>> {
+    id:INT
+    text:TEXT
+  }
+
   Question "1, *" -u- "1, 1" Survey
-  Result "0, *" -u- "1, 1" Survey
-  Result "1, 1" -u- "1, 1" Expert
+  Answer "1, 1" -u- "1, 1" Question
+  Answer "1, 1" -u- "1, 1" Expert
+  Question "1, 1" -u- "0, *" PossibleAnswers
       
 @enduml

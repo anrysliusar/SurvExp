@@ -9,6 +9,7 @@
   '-Эксперт-'
   entity Expert
   entity Expert.id
+  entity Expert.userID
   entity Expert.occupation
   
   '-----Объекты-----'
@@ -16,17 +17,22 @@
   entity Survey
   entity Survey.id
   entity Survey.name
-  entity Survey.theme
+  entity Survey.topic
   entity Survey.deadline
   '-Вопрос-'
   entity Question
   entity Question.id
   entity Question.type
   entity Question.text
-  entity Question.possibleAnswers
   '-Ответы на анкеты-'
-  entity Result
-  entity Result.date
+  entity Answer
+  entity Answer.id
+  entity Answer.date
+  entity Answer.text
+  '-Возможные ответы-'
+  entity PossibleAnswers
+  entity PossibleAnswers.id
+  entity PossibleAnswers.text
   
   
   '-----Пользователи-----'
@@ -36,24 +42,30 @@
   User.role -u-* User
   '-Эксперт-'
   Expert.id -d-* Expert
+  Expert.userID -d-* Expert
   Expert.occupation -d-* Expert
   
   '-----Объекты-----'
   '-Связи-'
   Question "1, *" -u- "1, 1" Survey
-  Result "0, *" -u- "1, 1" Survey
-  Result "1, 1" -u- "1, 1" Expert
+  Answer "1, 1" -u- "1, 1" Question
+  Answer "1, 1" -u- "1, 1" Expert
+  PossibleAnswers "0, *" -u- "1, 1" Question
   '-Опрос-'
   Survey.id -d-* Survey
   Survey.name -d-* Survey
-  Survey.theme -d-* Survey
+  Survey.topic -d-* Survey
   Survey.deadline -d-* Survey
   '-Вопрос-'
   Question.id -u-* Question
   Question.type -u-* Question
   Question.text -u-* Question
-  Question.possibleAnswers -u-* Question
   '-Ответы на анкеты-'
-  Result.date -u-* Result
+  Answer.id -u-* Answer
+  Answer.date -u-* Answer
+  Answer.text -u-* Answer
+  '-Возможные ответы-'
+  PossibleAnswers.id -u-* PossibleAnswers
+  PossibleAnswers.text -u-* PossibleAnswers
   
 @enduml
