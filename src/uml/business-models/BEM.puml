@@ -45,9 +45,9 @@
   
   '-----Объекты-----'
   '-Связи-'
-  Question "1, *" -u- "1, 1" Survey
-  User "1, 1" -u- "1, 1" Expert
-  Answer "1, 1" -u- "1, 1" Question
+  Question "0, *" -u- "1, 1" Survey
+  User "1, 1" -u- "0, 1" Expert
+  Answer "0, *" -u- "1, 1" Question
   Answer "0, *" -u- "1, 1" Expert
   PossibleAnswers "0, *" -u- "1, 1" Question
   '-Опрос-'
