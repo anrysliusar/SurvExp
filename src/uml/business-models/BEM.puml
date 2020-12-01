@@ -9,7 +9,6 @@
   '-Эксперт-'
   entity Expert
   entity Expert.id
-  entity Expert.userID
   entity Expert.occupation
   
   '-----Объекты-----'
@@ -42,14 +41,14 @@
   User.role -u-* User
   '-Эксперт-'
   Expert.id -d-* Expert
-  Expert.userID -d-* Expert
   Expert.occupation -d-* Expert
   
   '-----Объекты-----'
   '-Связи-'
   Question "1, *" -u- "1, 1" Survey
+  User "1, 1" -u- "1, 1" Expert
   Answer "1, 1" -u- "1, 1" Question
-  Answer "1, 1" -u- "1, 1" Expert
+  Answer "0, *" -u- "1, 1" Expert
   PossibleAnswers "0, *" -u- "1, 1" Question
   '-Опрос-'
   Survey.id -d-* Survey

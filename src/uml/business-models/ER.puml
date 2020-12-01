@@ -8,7 +8,6 @@
   
   entity Expert <<ENTITY>>{
     id:INT
-    userid:INT
     occupation:TEXT
   }
   
@@ -37,8 +36,9 @@
   }
 
   Question "1, *" -u- "1, 1" Survey
+  User "1, 1" -u- "1, 1" Expert
   Answer "1, 1" -u- "1, 1" Question
-  Answer "1, 1" -u- "1, 1" Expert
+  Answer "0, *" -u- "1, 1" Expert
   Question "1, 1" -u- "0, *" PossibleAnswers
       
 @enduml
