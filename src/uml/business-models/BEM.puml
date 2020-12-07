@@ -32,6 +32,10 @@
   entity PossibleAnswers
   entity PossibleAnswers.id
   entity PossibleAnswers.text
+  '-Типы вопросов-'
+  entity QuestionType
+  entity QuestionType.id
+  entity QuestionType.name
   
   
   '-----Пользователи-----'
@@ -50,6 +54,7 @@
   Answer "0, *" -u- "1, 1" Question
   Answer "0, *" -u- "1, 1" Expert
   PossibleAnswers "0, *" -u- "1, 1" Question
+  QuestionType "1, 1" -u- "1, 1" Question
   '-Опрос-'
   Survey.id -d-* Survey
   Survey.name -d-* Survey
@@ -66,5 +71,8 @@
   '-Возможные ответы-'
   PossibleAnswers.id -u-* PossibleAnswers
   PossibleAnswers.text -u-* PossibleAnswers
+  '-Типы вопросов-'
+  QuestionType.id -u-* QuestionType
+  QuestionType.name -u-* QuestionType
   
 @enduml
