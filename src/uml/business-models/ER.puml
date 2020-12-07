@@ -36,8 +36,8 @@
   }
 
   entity QuestionType <<ENTITY>> {
-  	id:INT
-  	name:TEXT
+    id:INT
+    name:TEXT
   }
 
   Question "1, *" -u- "1, 1" Survey
