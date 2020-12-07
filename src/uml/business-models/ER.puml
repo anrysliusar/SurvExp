@@ -1,30 +1,30 @@
 @startuml
 
-  entity User <<ENTITY>> {
+  entity Users <<ENTITY>> {
     id:INT
-    username:TEXT
-    role:INT
+    Usersname:TEXT
+    Roles:INT
   }
   
-  entity Expert <<ENTITY>>{
+  entity Experts <<ENTITY>>{
     id:INT
     occupation:TEXT
   }
   
-  entity Survey <<ENTITY>>{
+  entity Surveys <<ENTITY>>{
     id:INT
     name:TEXT
     topic:TEXT
     deadline:DATE
   }
   
-  entity Question <<ENTITY>>{
+  entity Questions <<ENTITY>>{
     id:INT
     type:INT
     text:TEXT
   }
 
-  entity Answer <<ENTITY>> {
+  entity Answers <<ENTITY>> {
     id:INT
     date:DATE
     text:TEXT
@@ -35,21 +35,22 @@
     text:TEXT
   }
 
-  entity QuestionType <<ENTITY>> {
+  entity QuestionTypes <<ENTITY>> {
     id:INT
     name:TEXT
   }
 
-  entity Role <<ENTITY>> {
+  entity Roles <<ENTITY>> {
   	id:INT
   	name:TEXT
   }
 
-  Question "1, *" -u- "1, 1" Survey
-  Answer "1, 1" -u- "1, 1" Question
-  Answer "1, 1" -u- "1, 1" Expert
-  Question "1, 1" -u- "0, *" PossibleAnswers
-  QuestionType "1, 1" -u- "1, 1" Question
-  Role "1, 1" -u- "1, 1" User
+  Questions "0, *" -u- "1, 1" Surveys
+  Answers "0, *" -u- "1, 1" Questions
+  Answers "1, 1" -u- "0, *" Experts
+  Questions "1, 1" -u- "0, *" PossibleAnswers
+  QuestionTypes "1, 1" -u- "1, 1" Questions
+  Roles "1, 1" -u- "1, 1" Users
+  Experts "0, *" -u- "1, 1" Users
       
 @enduml

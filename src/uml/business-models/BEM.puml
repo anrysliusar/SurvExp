@@ -2,85 +2,85 @@
   
   '-----Пользователи-----'
   '-Пользователь-'
-  entity User
-  entity User.id
-  entity User.username
-  entity User.role
+  entity Users
+  entity Users.id
+  entity Users.Usersname
+  entity Users.Roles
   '-Эксперт-'
-  entity Expert
-  entity Expert.id
-  entity Expert.occupation
+  entity Experts
+  entity Experts.id
+  entity Experts.occupation
   
   '-----Объекты-----'
   '-Опрос-'
-  entity Survey
-  entity Survey.id
-  entity Survey.name
-  entity Survey.topic
-  entity Survey.deadline
+  entity Surveys
+  entity Surveys.id
+  entity Surveys.name
+  entity Surveys.topic
+  entity Surveys.deadline
   '-Вопрос-'
-  entity Question
-  entity Question.id
-  entity Question.type
-  entity Question.text
+  entity Questions
+  entity Questions.id
+  entity Questions.type
+  entity Questions.text
   '-Ответы на анкеты-'
-  entity Answer
-  entity Answer.id
-  entity Answer.date
-  entity Answer.text
+  entity Answers
+  entity Answers.id
+  entity Answers.date
+  entity Answers.text
   '-Возможные ответы-'
   entity PossibleAnswers
   entity PossibleAnswers.id
   entity PossibleAnswers.text
   '-Типы вопросов-'
-  entity QuestionType
-  entity QuestionType.id
-  entity QuestionType.name
+  entity QuestionTypes
+  entity QuestionTypes.id
+  entity QuestionTypes.name
   '-Роли-'
-  entity Role
-  entity Role.id
-  entity Role.name
+  entity Roles
+  entity Roles.id
+  entity Roles.name
 
   
   '-----Пользователи-----'
   '-Пользователь-'
-  User.id -u-* User
-  User.username -u-* User
-  User.role -u-* User
+  Users.id -u-* Users
+  Users.Usersname -u-* Users
+  Users.Roles -u-* Users
   '-Эксперт-'
-  Expert.id -d-* Expert
-  Expert.occupation -d-* Expert
+  Experts.id -d-* Experts
+  Experts.occupation -d-* Experts
   
   '-----Объекты-----'
   '-Связи-'
-  Question "0, *" -u- "1, 1" Survey
-  User "1, 1" -u- "0, 1" Expert
-  Answer "0, *" -u- "1, 1" Question
-  Answer "0, *" -u- "1, 1" Expert
-  PossibleAnswers "0, *" -u- "1, 1" Question
-  QuestionType "1, 1" -u- "1, 1" Question
-  Role "1, 1" -u- "1, 1" User
+  Questions "0, *" -u- "1, 1" Surveys
+  Answers "0, *" -u- "1, 1" Questions
+  Answers "1, 1" -u- "0, *" Experts
+  Questions "1, 1" -u- "0, *" PossibleAnswers
+  QuestionTypes "1, 1" -u- "1, 1" Questions
+  Roles "1, 1" -u- "1, 1" Users
+  Experts "0, *" -u- "1, 1" Users
   '-Опрос-'
-  Survey.id -d-* Survey
-  Survey.name -d-* Survey
-  Survey.topic -d-* Survey
-  Survey.deadline -d-* Survey
+  Surveys.id -d-* Surveys
+  Surveys.name -d-* Surveys
+  Surveys.topic -d-* Surveys
+  Surveys.deadline -d-* Surveys
   '-Вопрос-'
-  Question.id -u-* Question
-  Question.type -u-* Question
-  Question.text -u-* Question
+  Questions.id -u-* Questions
+  Questions.type -u-* Questions
+  Questions.text -u-* Questions
   '-Ответы на анкеты-'
-  Answer.id -u-* Answer
-  Answer.date -u-* Answer
-  Answer.text -u-* Answer
+  Answers.id -u-* Answers
+  Answers.date -u-* Answers
+  Answers.text -u-* Answers
   '-Возможные ответы-'
   PossibleAnswers.id -u-* PossibleAnswers
   PossibleAnswers.text -u-* PossibleAnswers
   '-Типы вопросов-'
-  QuestionType.id -u-* QuestionType
-  QuestionType.name -u-* QuestionType
+  QuestionTypes.id -u-* QuestionTypes
+  QuestionTypes.name -u-* QuestionTypes
   '-Роли-'
-  Role.id -u-* Role
-  Role.name -u-* Role
+  Roles.id -u-* Roles
+  Roles.name -u-* Roles
 
 @enduml
