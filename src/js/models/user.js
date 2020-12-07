@@ -21,10 +21,10 @@ User.init(
 
     {
         sequelize: connection,
-        modelName: 'user'
+        modelName: 'user',
+        timestamps: false
     }
 );
-User.belongsTo(Role)
 
 module.exports = {
     User

@@ -24,7 +24,7 @@ module.exports = {
 
             const projectsList = await models.Role.findAll();
             console.log(chalk.green(`Projects List`));
-            console.log(toTable(projectsList, "id", "role"));
+            console.log(toTable(projectsList, "id", "name"));
         }
     )
 };

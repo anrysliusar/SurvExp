@@ -12,7 +12,8 @@ Role.init(
     },
     {
         sequelize: connection,
-        modelName: 'role'
+        modelName: 'role',
+        timestamps: false,
     }
 );
 
