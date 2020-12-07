@@ -1,0 +1,32 @@
+{
+  "name": "survexp",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snyk04/SurvExp.git"
+  },
+  "keywords": [
+    "survey"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snyk04/SurvExp/issues"
+  },
+  "homepage": "https://github.com/snyk04/SurvExp#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cli-table3": "^0.6.0",
+    "lodash-node": "^3.10.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
