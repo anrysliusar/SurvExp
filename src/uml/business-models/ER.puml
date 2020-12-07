@@ -35,13 +35,6 @@
     text:TEXT
   }
 
-<<<<<<< Updated upstream
-  Question "0, *" -u- "1, 1" Survey
-  User "1, 1" -u- "0, 1" Expert
-  Answer "0, *" -u- "1, 1" Question
-  Answer "0, *" -u- "1, 1" Expert
-  PossibleAnswers "0, *" -u- "1, 1" Question
-=======
   entity QuestionType <<ENTITY>> {
   	id:INT
   	name:TEXT
@@ -52,6 +45,5 @@
   Answer "1, 1" -u- "1, 1" Expert
   Question "1, 1" -u- "0, *" PossibleAnswers
   QuestionType "1, 1" -u- "1, 1" Question
->>>>>>> Stashed changes
       
 @enduml
