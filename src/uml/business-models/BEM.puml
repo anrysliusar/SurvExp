@@ -36,7 +36,11 @@
   entity QuestionType
   entity QuestionType.id
   entity QuestionType.name
-  
+  '-Роли-'
+  entity Role
+  entity Role.id
+  entity Role.name
+
   
   '-----Пользователи-----'
   '-Пользователь-'
@@ -55,6 +59,7 @@
   Answer "0, *" -u- "1, 1" Expert
   PossibleAnswers "0, *" -u- "1, 1" Question
   QuestionType "1, 1" -u- "1, 1" Question
+  Role "1, 1" -u- "1, 1" User
   '-Опрос-'
   Survey.id -d-* Survey
   Survey.name -d-* Survey
@@ -74,5 +79,8 @@
   '-Типы вопросов-'
   QuestionType.id -u-* QuestionType
   QuestionType.name -u-* QuestionType
-  
+  '-Роли-'
+  Role.id -u-* Role
+  Role.name -u-* Role
+
 @enduml

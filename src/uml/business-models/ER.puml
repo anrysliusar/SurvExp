@@ -40,10 +40,16 @@
   	name:TEXT
   }
 
+  entity Role <<ENTITY>> {
+  	id:INT
+  	name:TEXT
+  }
+
   Question "1, *" -u- "1, 1" Survey
   Answer "1, 1" -u- "1, 1" Question
   Answer "1, 1" -u- "1, 1" Expert
   Question "1, 1" -u- "0, *" PossibleAnswers
   QuestionType "1, 1" -u- "1, 1" Question
+  Role "1, 1" -u- "1, 1" User
       
 @enduml
