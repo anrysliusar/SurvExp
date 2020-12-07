@@ -1,9 +1,8 @@
 const tests = [
+    require("./connections"),
     require("./app"),
-    require("./connections")
-]
-console.log('start');
-tests.forEach(test =>{
-    console.log(test);
+];
 
-})
+tests.forEach(test => {
+    test.run()
+});
