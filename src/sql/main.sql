@@ -104,11 +104,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `SurvExp`.`Experts`
+-- Table `SurvExp`.`Expert`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `SurvExp`.`Experts` ;
+DROP TABLE IF EXISTS `SurvExp`.`Expert` ;
 
-CREATE TABLE IF NOT EXISTS `SurvExp`.`Experts` (
+CREATE TABLE IF NOT EXISTS `SurvExp`.`Expert` (
   `id` INT NOT NULL,
   `occupation` TEXT NOT NULL,
   `User_id` INT NOT NULL,
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `SurvExp`.`Answers` (
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
   CONSTRAINT `fk_Answer_Expert1`
     FOREIGN KEY (`Expert_id`)
-    REFERENCES `SurvExp`.`Experts` (`id`)
+    REFERENCES `SurvExp`.`Expert` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Answer_Question1`
@@ -245,14 +245,14 @@ COMMIT;
 
 
 -- -----------------------------------------------------
--- Data for table `SurvExp`.`Experts`
+-- Data for table `SurvExp`.`Expert`
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `SurvExp`;
-INSERT INTO `SurvExp`.`Experts` (`id`, `occupation`, `User_id`) VALUES (1, 'ИТ', 2);
-INSERT INTO `SurvExp`.`Experts` (`id`, `occupation`, `User_id`) VALUES (2, 'ИТ', 3);
-INSERT INTO `SurvExp`.`Experts` (`id`, `occupation`, `User_id`) VALUES (3, 'Услуги', 5);
-INSERT INTO `SurvExp`.`Experts` (`id`, `occupation`, `User_id`) VALUES (4, 'Услуги', 6);
+INSERT INTO `SurvExp`.`Expert` (`id`, `occupation`, `User_id`) VALUES (1, 'ИТ', 2);
+INSERT INTO `SurvExp`.`Expert` (`id`, `occupation`, `User_id`) VALUES (2, 'ИТ', 3);
+INSERT INTO `SurvExp`.`Expert` (`id`, `occupation`, `User_id`) VALUES (3, 'Услуги', 5);
+INSERT INTO `SurvExp`.`Expert` (`id`, `occupation`, `User_id`) VALUES (4, 'Услуги', 6);
 
 COMMIT;
 
